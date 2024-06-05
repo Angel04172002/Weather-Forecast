@@ -9,7 +9,7 @@ const renderTemplate = (templateResult) => {
 
 };
 
-export const render = (ctx, next) => {
+export const renderMiddleware = (ctx, next) => {
 
     ctx.render = renderTemplate;
 
