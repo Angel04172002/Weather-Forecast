@@ -1,0 +1,45 @@
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+
+}
+
+.main-navigation li {
+    padding: 0.8em;
+    height: 0.5em;
+    list-style-type: none;
+    font-size: 2em;
+}
+
+.main-navigation li a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+.homeTitle {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 3em;
+}
+
+#root {
+    height: 100vh;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20%;
+    font-size: 3em;
+  
+}
+
+
+#searchForm button {
+    margin: 0 auto;
+
+}
+
