@@ -6,8 +6,8 @@ const rootElement = document.getElementById('root');
 const renderTemplate = (templateResult) => {
 
     render(templateResult, rootElement);
-
 };
+
 
 export const renderMiddleware = (ctx, next) => {
 

@@ -19,10 +19,38 @@
 
 
 .homeTitle {
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     margin-top: 3em;
 }
+
+.homeDescription {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.searchBtn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.3em;
+    color: black;
+    font-size: 0.6em;
+    margin-left: 2em;
+}
+
+
+
+
+.cityDiv input {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
 
 #root {
     height: 100vh;
@@ -34,6 +62,7 @@
     justify-content: center;
     margin: 5%;
     font-size: 3em;
+    gap: 1em;
   
 }
 
@@ -52,5 +81,24 @@
 
 
 .cityInfo p {
+    font-size: 1.3em;
     text-align: center;
+}
+
+
+
+.weatherInfo {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+
+.nextDaysForecastBtn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em;
+    color: lightcoral;
+    font-size: 2em;
 }

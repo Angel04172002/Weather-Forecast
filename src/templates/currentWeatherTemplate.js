@@ -4,13 +4,13 @@ export const currentWeatherTemplate = (data = '', getWeather) => html`
 
     <form id="searchForm" @submit = "${getWeather}">
 
-        <div>
+        <div class="cityDiv">
             <label for="city">City</label>
             <input type="text" name="city">
         </div>
 
         <div>
-            <button>Search</button>
+            <button class="searchBtn">Search</button>
         </div>
 
     </form>
@@ -40,7 +40,7 @@ export const currentWeatherTemplate = (data = '', getWeather) => html`
 
 
         
-        <a href= "/currentWeather/${data.lat.toString()}/${data.lon.toString()}">Next 7 days</a>
+        <a class="nextDaysForecastBtn" href= "/currentWeather/${data.lat.toString()}/${data.lon.toString()}">Next 7 days</a>
 
         `
         :
