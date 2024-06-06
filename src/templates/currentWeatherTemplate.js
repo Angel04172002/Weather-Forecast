@@ -36,7 +36,13 @@ export const currentWeatherTemplate = (data = '', getWeather) => html`
 
 
         <p>Wind speed: ${data.speed} </p>
-        <p>Gust: ${data.gust} </p>`
+        <p>Gust: ${data.gust} </p>
+
+
+        
+        <a href= "/currentWeather/${data.lat.toString()}/${data.lon.toString()}">Next 7 days</a>
+
+        `
         :
         html``
     }

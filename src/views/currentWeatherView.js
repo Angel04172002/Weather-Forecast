@@ -19,6 +19,7 @@ const getWeather = async (e) => {
 
     const weatherResult = await weatherService.getCurrentWeather(latitude, longitude);
 
+    const {lat, lon} = weatherResult.coord;
     const { main, description } = weatherResult.weather[0];
     const { temp, feels_like, temp_min, temp_max, pressure, humidity } = weatherResult.main;
     const { speed, gust } = weatherResult.wind;
@@ -35,7 +36,9 @@ const getWeather = async (e) => {
         pressure,
         humidity,
         speed,
-        gust
+        gust,
+        lat,
+        lon
     };
 
     render(currentWeatherTemplate(data, getWeather), document.getElementById('root'));
